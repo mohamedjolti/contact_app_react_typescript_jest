@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme'
 import configureStore from 'redux-mock-store';
-import ContactList from '../pages/contactlist/ContactList';
-import '../setupTests';
+import ContactList from '../../pages/contactlist/ContactList';
+import '../../setupTests';
 
 let store: any;
 describe('ContactList test', () => {

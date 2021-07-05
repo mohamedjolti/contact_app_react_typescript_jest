@@ -31,18 +31,19 @@ test("test searching a contact", () => {
             chats: []
         }
     ];
+    //test if the exepected object is the same as the result return by the search function
     expect(Search("test1", items)).toEqual(
         [{
-        id: 1,
-        name: 'test1',
-        email: 'email2',
-        phoneNumber: '123',
-        messagesSent: 0,
-        messaghesReceived: 100,
-        assignee: "assignee test",
-        tags: [],
-        type: "",
-        chats: []
-    }]
+            id: 1,
+            name: 'test1',
+            email: 'email2',
+            phoneNumber: '123',
+            messagesSent: 0,
+            messaghesReceived: 100,
+            assignee: "assignee test",
+            tags: [],
+            type: "",
+            chats: []
+        }]
     );
 })

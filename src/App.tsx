@@ -1,14 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import {Provider} from "react-redux"
-import './App.css';
-import Contact from "./pages/contactlist/Contact";
+
+import {Provider} from "react-redux";
+import ContactList from "./pages/contactlist/ContactList";
 import { store } from './redux';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <Provider store={store}>
     <div className="App">
-     <Contact/>
+     <ContactList/>
     </div>
     </Provider>
   );
